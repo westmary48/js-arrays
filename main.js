@@ -84,11 +84,11 @@ const buildAssignmentCard = () => {
     let domString = '';
     for(let i = 0; i < assignments.length; i++) {
         domString += `<div class ='assignments'>`
-        domString += `<h3>${assignments[i].title}</h3>`
-        domString += `<h3>${assignments[i].dueDate}</h3>`
-        domString += `<h3>${assignments[i].topic}</h3>`
-        domString += `<p>${assignments[i].notes}</p>`
-        domString += `<h3>${assignments[i].assignmentUrl}</h3>`
+        domString += `<h3 class = "assignment-title">${assignments[i].title}</h3>`
+        domString += `<h3>Due Date: ${assignments[i].dueDate}</h3>`
+        domString += `<h3>Topic: ${assignments[i].topic}</h3>`
+        domString += `<p>Notes: ${assignments[i].notes}</p>`
+        domString += `<a href>${assignments[i].assignmentUrl}</a>`
         domString += `</div>`
 
 
