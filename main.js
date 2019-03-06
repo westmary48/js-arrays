@@ -42,9 +42,71 @@ const buildDinosaurs = () => {
     printToDom('dino-barn', domString);
 };
 
+const assignments = [
+    {
+        title: 'product cards',
+        dueDate: '03/05/2019',
+        topic: 'HTML/CSS',
+        notes: 'Use flexbox',
+        assignmentUrl: 'www.google.com',
+    },
+    {
+        title: 'assignment 2',
+        dueDate: '05/04/2019',
+        topic: 'HTML/CSS/JavaScript',
+        notes: 'Use flexbox, and a for loop',
+        assignmentUrl: 'www.google.com',
+    },
+    {
+        title: 'assignment 3',
+        dueDate: '05/15/2019',
+        topic: 'HTML/CSS/SCSS',
+        notes: 'Use flexbox',
+        assignmentUrl: 'www.google.com',
+    },
+    {
+        title: 'assignment 4',
+        dueDate: '06/13/2019',
+        topic: 'HTML/CSS/REACT',
+        notes: 'Use flexbox',
+        assignmentUrl: 'www.google.com',
+    },
+    {
+        title: 'assignment 5',
+        dueDate: '03/05/2019',
+        topic: 'HTML/CSS/JQUERY',
+        notes: 'Use flexbox',
+        assignmentUrl: 'www.google.com',
+    },
+];
+
+const buildAssignmentCard = () => {
+    let domString = '';
+    for(let i = 0; i < assignments.length; i++) {
+        domString += `<div class ='assignments'>`
+        domString += `<h3>${assignments[i].title}</h3>`
+        domString += `<h3>${assignments[i].dueDate}</h3>`
+        domString += `<h3>${assignments[i].topic}</h3>`
+        domString += `<p>${assignments[i].notes}</p>`
+        domString += `<h3>${assignments[i].assignmentUrl}</h3>`
+        domString += `</div>`
+
+
+    }
+    printToDom('assignments', domString);
+
+}
+
+// total of 5 assignments
+//make a funtion called buildAssignmentCard = loop over assignments and make a domString
+//reuse the printToDom function to display the domString
+
+
+
 // this function runs on page load
 const init = () => {
   buildDinosaurs();
+  buildAssignmentCard();
 };
 
 init();
