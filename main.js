@@ -6,12 +6,15 @@
 const dinosaurs = [
    {
        dinotype: 't-rex',
+       name: 'wrex'
    },
    {
        dinotype: 'stegosaurus',
+       name: 'tom'
    },
    {
        dinotype: 'velociraptor',
+       name: 'nick'
    }
 ];
 
@@ -27,7 +30,11 @@ const buildDinosaurs = () => {
     // 2.) ending position (dinosaurs.length)
     // 3.) increase the i each time (i++)
     for(let i = 0; i <  dinosaurs.length; i++){
+        domString += `<div class = 'dinosaur'>`
         domString += `<h3>${dinosaurs[i].dinotype}</h3>`;
+        domString += `<h3>${dinosaurs[i].name}</h3>`;
+        domString += `</div>`
+
         // console.log(dinosaurs[i].dinotype);
 
     }
