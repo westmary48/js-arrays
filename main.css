@@ -5,3 +5,27 @@ body {
 .dinosaur {
     border: 2px solid burlywood;
 }
+
+.assignments {
+text-align: center;
+width: 30%;
+box-shadow:10px 10px 5px;
+border: 1px solid gray;
+margin-right: 33px;
+margin-top: 33px;
+background-color:#F5F5F5;
+}
+
+#assignments {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conatiner {
+    display: flex;
+
+}
+
+.assignment-title {
+    background-color: lightgray;
+}
